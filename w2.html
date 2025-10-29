@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Plans</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.small-title {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.pricing-section h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Individual Pricing Cards */
+.pricing-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 220px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.pricing-card h2 {
+  font-size: 40px;
+  color: #ffcc00;
+  margin-bottom: 25px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons */
+.pricing-card button {
+  background: #ffcc00;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing-card button:hover {
+  background: #f5b800;
+}
+
+/* Active Business Plan */
+.active {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+}
+
+.active h2 {
+  color: #ffeb3b;
+}
+
+.active button {
+  background: #ffeb3b;
+  color: #333;
+}
+
+.active button:hover {
+  background: #f5d300;
+}
+  </style>
+</head>
+<body>
+  <section class="pricing-section">
+    <h4 class="small-title">PRICING PLAN</h4>
+    <h1>Simple prices, flexible options & nothing hidden</h1>
+
+    <div class="pricing-container">
+      <!-- Free Plan -->
+      <div class="pricing-card">
+        <h3>Free</h3>
+        <h2>$0</h2>
+        <ul>
+          <li>10 Users</li>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>GET PLAN</button>
+      </div>
+
+      <!-- Individual Plan -->
+      <div class="pricing-card">
+        <h3>Individual</h3>
+        <h2>$29</h2>
+        <ul>
+          <li>10 Users</li>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>GET PLAN</button>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="pricing-card active">
+        <h3>Business</h3>
+        <h2>$59</h2>
+        <ul>
+          <li>10 Users</li>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>GET PLAN</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="pricing-card">
+        <h3>Premium</h3>
+        <h2>$89</h2>
+        <ul>
+          <li>15 Users</li>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>GET PLAN</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
